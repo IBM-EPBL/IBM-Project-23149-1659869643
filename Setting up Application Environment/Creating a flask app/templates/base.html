@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    {%block head%}{%endblock%}
+</head>
+<body>
+    <div class="navbar">
+    <a href="/" >Home</a>
+    <a href="/about">Upload Image</a>
+    <a href="/signin">Plans</a>
+    <a href="/signup">Sign Out</a>
+
+
+
+
+    <!-- import os
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
+
+message = Mail(
+    from_email='from_email@example.com',
+    to_emails='to@example.com',
+    subject='Sending with Twilio SendGrid is Fun',
+    html_content='<strong>and easy to do anywhere, even with Python</strong>')
+try:
+    sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+    response = sg.send(message)
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+except Exception as e:
+    print(e.message) -->
+</div>
+   {%block body%} {%endblock%}
+</body>
+</html>

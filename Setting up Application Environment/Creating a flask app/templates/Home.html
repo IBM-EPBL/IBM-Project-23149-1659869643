@@ -1,0 +1,59 @@
+<!-- {%extends 'base.html'%}
+{% block head%} <title>Home</title>{%endblock%}
+    {%block body%}
+    <div class="home_page_color">
+    <br><h2>Welcome to Daily Blog </h2>
+    <p>To continue using this Daily Blog please Signup</p>
+    <button type="button"><a href="/signup">SIGN UP</a></button>
+    <p>If you are a existing user please Signin</p>
+    <button type="button"><a href="/signin">SIGN IN</a></button>
+</div>{%endblock%}
+
+     -->
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Python Flask Upload and display image</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<p><h1>Python Flask Upload and display image</h1></p>
+<div class="container">
+<div class="row">
+    <h2>Select a file to upload</h2>
+    <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </p>
+    {% if filename %}
+        <div>
+            <img src="{{ url_for('display_image', filename=filename) }}">
+        </div>
+    {% endif %}
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" class="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            
+            <input type="submit" value="Submit" class="btn btn-info">
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente repellat, saepe asperiores excepturi placeat voluptatum vel laborum possimus. Ipsum cumque mollitia provident saepe ratione odit molestias laudantium recusandae tempora aspernatur.</p>
+    </form>
+</div>
+</div>
+</body>
+</html>
