@@ -1,0 +1,106 @@
+{%extends 'base.html'%}
+{%block header%}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+     */
+     background:linear-gradient(to right,rgb(231, 198, 198),rgb(185, 156, 146));
+    margin: 0;
+  
+}
+.diet-plans{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-gap:15px;
+    margin: 1em;
+
+}
+ 
+.mind-diet,.vegan-diet,.low-carbs-diet,.volumetric-diet,.mayo-clinic-diet,.paleo-diet{
+    display: grid;
+    grid-template-columns:500px auto;    
+    background: white;
+    border-radius: 20px;
+}
+.diet-plans img{
+    width:100%;
+    height:300px;
+    border-radius: 20px;
+}
+.text{
+    margin-left:0.5em;
+}
+.text > h2{
+    color: rgb(248, 151, 116);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:0;
+    font-weight: bold;
+}
+.text > h3{
+    text-transform:uppercase;
+    color:rgba(0,0,0,0.7);
+    font-size: 20px;
+}
+ 
+</style>
+{%endblock%}
+{%block content%}
+<div class="diet-plans">
+    <div class="mind-diet">
+        <img src="../static/img/mind-diet.jpg" alt="">
+        <div class="text">
+            <h2 class=" m-2 p-3 fw-bold">THE MIND DIET</h2>
+            <h3 >Health benefits</h3>
+            <p>Research shows that the MIND diet may reduce a person's risk of developing Alzheimer's disease, and studies show that the MIND diet is superior to other plant-rich diets for improving cognition.Research also shows that the MIND diet can help slow cognitive decline and improve resiliency in older adults.It may also help delay the onset of the movement disorder Parkinson's disease.</p>
+        </div>
+        </div>
+        <div class="vegan-diet">
+            <img src="../static/img/vegan.jpg" alt="">
+            <div class="text">
+                <h2 class=" m-2 p-3 fw-bold">THE VEGAN DIET</h2>
+                <h3 >Health benefits</h3>
+                <p>A vegan diet seems to be very effective at helping people lose weight — often without counting calories — because its very low fat and high fiber content may make you feel fuller for longer.
+
+                    Vegan diets are consistently linked to lower body weight and body mass index (BMI) compared to other diets.One 18-week study showed that people on a vegan diet lost 9.3 pounds (4.2 kg) more than those on a control diet. The vegan group was allowed to eat until fullness, but the control group had to restrict calories.</p></div>
+            </div>
+            <div class="paleo-diet">
+                <img src="../static/img/paleo-diet.jpg" alt="">
+                <div class="text">
+                    <h2 class="m-2 p-3m-2 p-3 fw-bold">THE PALEO DIET</h2>
+                    <h3 >Health benefits</h3>
+                    <p>The diet seems effective at reducing risk factors for heart disease, such as cholesterol, blood sugar, blood triglycerides, and blood pressure>The paleo diet emphasizes whole foods, lean protein, vegetables, fruits, nuts, and seeds, while discouraging processed foods, sugar, dairy, and grains.
+
+                    </p>
+                </div>
+                </div>
+                <div class="volumetric-diet">
+                    <img src="../static/img/volumetric.png" alt="">
+                    <div class="text">
+                        <h2 class=" m-2 p-3 fw-bold">THE VOLUMETRICS DIET</h2>
+                        <h3 >Health benefits</h3>
+                        <p> The Volumetrics diet encourages nutritious foods that are low in calories but high in fiber, vitamins, and minerals, which may help increase your intake of key nutrients and protect against nutritional deficiencies.
+
+                            Research also links diets with a low calorie density to improved diet quality.</p></div>
+                    </div>
+                    <div class="mayo-clinic-diet">
+                        <img src="../static/img/mayo-clinic.jpg" alt="">
+                        <div class="text">
+                            <h2 class="m-2 p-3 fw-bold">THE MAYO CLINIC DIET</h2>
+                            <h3 >Health benefits</h3>
+                            <p>Designed to be a lifestyle change over a quick fix, the Mayo Clinic Diet focuses on replacing less healthy behaviors with ones that are more likely to support longevity and weight loss.
+
+                                Rather than banning certain foods, the Mayo Clinic Diet uses a pyramid to encourage exercise and illustrate quantities of foods you should be consuming.</p> </div>
+                        </div>
+                        <div class="low-carbs-diet">
+                            <img src="../static/img/low-carbs.jpg" alt="">
+                            <div class="text">
+                                <h2 class=" m-2 p-3 fw-bold">THE LOW CARBS DIET</h2>
+                                <h3 >Health benefits</h3>
+                                <p> Low-carb diets tend to reduce your appetite and make you feel less hungry, leading to an automatic reduction in calorie intake .
+                                    Furthermore, low-carb diets may benefit many major disease risk factors, such as blood triglycerides, cholesterol levels, blood sugar levels, insulin levels, and blood pressure.
+                                </p></div>
+                            </div>
+    
+</div>
+{%endblock%}
