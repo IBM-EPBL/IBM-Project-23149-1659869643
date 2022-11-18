@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <!-- external style sheet links -->
+  <link rel="stylesheet" href="./static/CSS/main.css">
+  {%block header%}{%endblock%}
+   <!-- <link rel="stylesheet" href="./static/css/style.css"> -->
+   <!-- bootstrap links -->
+  <link href="./static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+  <link href="./static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;
+  1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;
+  1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+   rel="stylesheet">
+ 
+</head>
+<body>
+  <!-- <section class="nav_container">
+     <div class="logo">
+      <a href="home.html"><h2>Smart Fashion</h2></a>
+    </div>
+    <nav class="navMenu">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="#">profile</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav> 
+  </section> -->
+   
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center me-auto me-lg-0 text-decoration-none">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>NutroScan<span></span></h1>
+      </a>
+      <!-- navbar -->
+      <nav id="navbar" class="navbar text-decoration-none">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/upload">Upload Image </a></li>
+          <li><a href="/plans">Diet Plans</a></li>
+          <li><a href="/login">Login</a></li>
+          <!-- <li><a href="/signup">Sign Up</a></li> -->
+        </ul>
+      </nav><!-- .navbar -->
+
+       
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header>
+  <hr>
+    {% block content %}{% endblock %}
+    <!-- ======= Footer ======= -->
+    <div class="foot my-5">
+
+      <footer class="bg-dark text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nutrition Assistant Application</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="./home.html" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>HOME</a>
+                </li>
+                <li>
+                  <a href="./upload.html" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>UPLOAD IMAGE</a>
+                </li>
+                <li>
+                  <a href="./plans.html" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>DIET PLANS</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Related Links</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white">Diet & Weight Management Home</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Healthy Weight Guide</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Diet Blogs</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Send us a book</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Write to us</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in diet plans</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the food calorie</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the team</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2021 Copyright:
+          <a class="text-white" href="#">assistantnutri68@gmail.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+    <!-- End of .container -->
+    <!-- End of .container -->
+      
+    
+  
+    <!-- End of container -->
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+  
+</body>
+</html>
