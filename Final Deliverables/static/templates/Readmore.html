@@ -1,0 +1,205 @@
+{%extends 'base.html'%}
+{%block header%}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+     */
+     background:linear-gradient(to right,rgb(235, 91, 156),rgb(236, 167, 184));
+    margin: 0;
+  
+}
+.diet-plans{
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    grid-gap:30px;
+    margin: 1em;
+
+}
+ 
+.mind-diet,.vegan-diet,.low-carbs-diet,.volumetric-diet,.mayo-clinic-diet,.paleo-diet{
+    display: grid;
+    grid-template-columns:500px auto;    
+    background: white;
+    border-radius: 20px;
+}
+.diet-plans img{
+    width:100%;
+    height:500px;
+    border-radius: 20px;
+}
+.text{
+    margin-left:0.5em;
+}
+.text > h2{
+    color: rgb(130, 60, 35);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:0;
+    font-weight: bold;
+}
+.text > h3{
+    text-transform:uppercase;
+    color:rgba(0, 0, 0, 0.7);
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+p{
+    font-size: 19px;
+    margin: 15px;
+}
+ 
+</style>
+{%endblock%}
+{%block content%}
+<div class="diet-plans">
+    <div class="mind-diet">
+        <img src="../static/img/mind-diet.jpg" alt="">
+        <div class="text">
+            <h2 class=" m-2 p-3 fw-bold">THE MIND DIET</h2>
+            
+            <p><span style="margin: 40px;"></span>
+                Research shows that the MIND diet may reduce a person's risk of developing Alzheimer's disease, and studies show that the MIND diet is superior to other plant-rich diets for improving cognition.Research also shows that the MIND diet can help slow cognitive decline and improve resiliency in older adults.It may also help delay the onset of the movement disorder Parkinson's disease.
+            <br>The MIND diet aims to reduce dementia and the decline in brain health that often occurs as people get older. It combines aspects of two very popular diets, the Mediterranean diet and the Dietary Approaches to Stop Hypertension (DASH) diet.
+
+<br>
+Many experts regard the Mediterranean and DASH diets as two of the healthiest diets. Research has shown that they can lower blood pressure and reduce the risk of heart disease, diabetes, and several other diseases.
+<br>
+But researchers wanted to create a diet specifically to help improve brain function and prevent dementia.
+<br>
+To do this, they combined foods from the Mediterranean and DASH diets that had been shown to benefit brain health.
+<br>
+For example, the Mediterranean and DASH diets both recommend eating a lot of fruit. Fruit intake has not been correlated with improved brain function, but berry intake has been.
+
+
+            </p>
+        </div>
+        </div>
+        <div class="vegan-diet">
+            <img src="../static/img/vegan.jpg" alt="">
+            <div class="text">
+                <h2 class=" m-2 p-3 fw-bold">THE VEGAN DIET</h2>
+                
+                <p>
+                    <span style="margin: 40px;"></span>A vegan diet seems to be very effective at helping people lose weight — often without counting calories — because its very low fat and high fiber content may make you feel fuller for longer.<br>
+                    The vegan diet has become very popular. More and more people have decided to go vegan for ethical, environmental, or health reasons.
+
+This type of diet may result in various health benefits, including improved blood sugar control and heart health. It can also help you lose weight, if that’s your goal.
+
+But a diet based exclusively on plant foods may, in some cases, increase your risk of nutrient deficiencies.<br>
+
+That’s where this detailed beginner’s guide to the vegan diet comes in. It aims to cover everything you need to know, so you can follow a vegan diet in a healthful way.
+
+                    Vegan diets are consistently linked to lower body weight and body mass index (BMI) compared to other diets.One 18-week study showed that people on a vegan diet lost 9.3 pounds (4.2 kg) more than those on a control diet. The vegan group was allowed to eat until fullness, but the control group had to restrict calories.</p></div>
+            </div>
+            <div class="paleo-diet">
+                <img src="../static/img/paleo-diet.jpg" alt="">
+                <div class="text">
+                    <h2 class="m-2 p-3m-2 p-3 fw-bold">THE PALEO DIET</h2>
+                  
+                    <p><span style="margin: 40px;"></span>
+                        The diet seems effective at reducing risk factors for heart disease, such as cholesterol, blood sugar, blood triglycerides, and blood pressure>The paleo diet emphasizes whole foods, lean protein, vegetables, fruits, nuts, and seeds, while discouraging processed foods, sugar, dairy, and grains.<br>
+                       A paleo diet calls to skip grains (both refined and whole), legumes, packaged snacks, dairy, and sugar in favor of vegetables, fruit, meat, seafood, eggs, nuts, seeds, fats, and oils. It is a dietary plan based on foods similar to what was available in the stone age.
+
+It includes natural and unprocessed foods, fresh vegetables and fruits, nuts and seeds, and healthy fats. Emulating this food concept with the foods available nowadays while increasing focus on high food quality and sustainability is the heart of the paleo diet.<br>
+
+However, it doesn’t mean that we are giving up our hard-earned standard of living just because we adapt to the paleolithic diet. This lifestyle is about taking the proven nutritional approaches, understanding what is good for our body, and integrating the paleo idea with the knowledge of modern science.
+
+Paleo diet was easy for cave dwellers back in the paleolithic days as they were not tempted with thousands of processed foods we have access to now. This is where the challenge comes in for present-day humans since the only hunting we do is good deals at the supermarket.
+
+Good deals meaning bread, cheese, yogurt, rice, candy bars, milk, chips, cereal, and so on, go in the cart.<br>
+
+
+
+                    </p>
+                </div>
+                </div>
+                <div class="volumetric-diet">
+                    <img src="../static/img/volumetric.png" alt="">
+                    <div class="text">
+                        <h2 class=" m-2 p-3 fw-bold">THE VOLUMETRICS DIET</h2>
+                        <h3 >Health benefits</h3>
+                        <p> The Volumetrics diet encourages nutritious foods that are low in calories but high in fiber, vitamins, and minerals, which may help increase your intake of key nutrients and protect against nutritional deficiencies.
+
+                            Research also links diets with a low calorie density to improved diet quality.<br>
+                            <li>Category One (Very Low-Density) Includes:</li>
+Broth-based soup,
+Non-fat yogurt,
+Non-starchy vegetables,
+Fruits.<br>
+
+<li>Category Two (Low-Density) Includes:</li>
+
+
+Breakfast cereal,
+Legumes,
+Low-fat mixed dishes, like chili and spaghetti,
+Lean proteins such as poultry and fish,
+Starchy vegetables,
+Whole grains. <br>
+
+<li>Category Three (Medium-Density) Includes:</li>
+
+
+Bread.
+Cake.
+Cheese.
+French fries,
+Ice cream,
+Meat,
+Pizza,
+Pretzels,
+Salad dressing.<br>
+<li>Category Four (High-Density) Includes:</li>
+
+
+Butter,
+Candies,
+Chips,
+Chocolate,
+Cooking oil,
+Crackers,
+Nuts,
+Pretzels,
+Trail mix.<br>
+                        </p></div>
+                    </div>
+                    <div class="mayo-clinic-diet">
+                        <img src="../static/img/mayo-clinic.jpg" alt="">
+                        <div class="text">
+                            <h2 class="m-2 p-3 fw-bold">THE MAYO CLINIC DIET</h2>
+                            
+                            <p><span style="margin: 40px;"></span>Designed to be a lifestyle change over a quick fix, the Mayo Clinic Diet focuses on replacing less healthy behaviors with ones that are more likely to support longevity and weight loss.
+
+                                Rather than banning certain foods, the Mayo Clinic Diet uses a pyramid to encourage exercise and illustrate quantities of foods you should be consuming.<br>
+                                The program has been updated and is designed to help you reshape your lifestyle by adopting healthy new habits and breaking unhealthy old ones. The goal is to make simple, pleasurable changes that will result in a healthy weight that you can maintain for the rest of your life. 
+The purpose of the Mayo Clinic Diet is to help you lose excess weight and find a healthy way of eating that you can sustain for a lifetime.<br>
+
+It focuses on changing your daily routine by adding and breaking habits that can affect your weight. Simple habits, such as eating more fruits and vegetables, not eating while you watch TV, and moving your body for 30 minutes a day, can help you lose weight.
+
+The Mayo Clinic Diet is based on the latest behavior-change science, which will help you find your inner motivation to lose weight, set achievable goals and learn to handle setbacks
+                                
+                            </p> </div>
+                        </div>
+                        <div class="low-carbs-diet">
+                            <img src="../static/img/low-carbs.jpg" alt="">
+                            <div class="text">
+                                <h2 class=" m-2 p-3 fw-bold">THE LOW CARBS DIET</h2>
+                               
+                                <p> <span style="margin: 40px;"></span>Low-carb diets tend to reduce your appetite and make you feel less hungry, leading to an automatic reduction in calorie intake .
+                                    Furthermore, low-carb diets may benefit many major disease risk factors, such as blood triglycerides, cholesterol levels, blood sugar levels, insulin levels, and blood pressure.<br>
+                                    Low carb diets are often used to promote weight loss and stabilize blood sugar levels. Though guidelines can vary depending on your daily carb allowance, most low carb diets typically limit foods high in carbs or added sugar.
+
+A low carb diet restricts carbohydrates, such as those found in pasta, bread, and sugary foods. It’s high in protein, fat, and vegetables.<br>
+Low carb diets have been associated with several health benefits and are often used to support weight loss and manage blood sugar levels.
+
+There are several types of low carb diets, and they differ based on the amount of carbs permitted each day. A typical low carb diet usually contains less than 26% of total daily calories from carbs. For those following a 2000-calorie diet, this equals fewer than 130 grams (g) of carbs per day (1).<br>
+
+Generally, low carb diets limit foods high in carbs or added sugar, including sweets, starches, and refined grains.
+
+However, the foods you’re permitted on a low carb diet can vary depending on your daily carb allotment. Even higher carb foods like fruits, starchy vegetables, and whole grains can fit into some low carb diets in moderation.
+                                </p></div>
+                            </div>
+    
+</div>
+{%endblock%}
